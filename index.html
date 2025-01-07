@@ -6,11 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./src/style.css" />
     <title>Vite App</title>
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!-- navbar -->
     <header
-      class="flex justify-between items-center py-[16px] md:py-[14px] px-5 md:px-12 lg:px-[100px] fixed w-full bg-white top-0"
+      class="flex justify-between items-center py-[16px] md:py-[14px] fixed w-full bg-white top-0 px-5 md:px-12 lg:px-[100px]"
     >
       <div class="flex items-center gap-1">
         <img src="./src/assets/logo.svg" alt="" />
@@ -109,45 +117,197 @@
       </div>
     </header>
 
-    <!-- heero -->
-    <main
-      class="flex justify-center flex-col items-center min-h-screen md:mt-[40px] lg:mt-[130px] mt-[60px] gap-6"
-    >
-      <div class="flex">
-        <img src="./src/assets/figma.svg" alt="" />
-        <img src="./src/assets/flutter.svg" alt="" />
-        <img src="./src/assets/w.svg" alt="" />
-      </div>
-      <div
-        class="flex justify-center flex-col items-center w-[80%] md:w-[500px] lg:w-[900px] gap-5"
+    <div class="px-5 md:px-12 lg:px-[100px] w-full mt-0 lg:mt-[90px]">
+      <!-- heero -->
+      <main
+        class="flex justify-center flex-col items-center min-h-screen w-full pt-[60px] pb-[80px]"
       >
-        <h1
-          class="font-plus-jakarta-sans font-normal text-[28px] md:text-[48px] lg:text-[96px] w-[96%] text-center lg:w-[1000px] tracking-[-0.2px] lg:leading-[96px]"
+        <div class="flex">
+          <img src="./src/assets/figma.svg" alt="" />
+          <img src="./src/assets/flutter.svg" alt="" />
+          <img src="./src/assets/w.svg" alt="" />
+        </div>
+        <div
+          class="flex justify-center flex-col items-center w-[80%] md:w-[500px] lg:w-[900px] gap-5"
         >
-          Design Stunning Websites in Minutes
-        </h1>
-        <p
-          class="text-[#747B8B] text-[9px] md:text-[12px] lg:text-[14px] font-normal text-center"
-        >
-          Design and launch professional, fully customizable websites in just a
-          few clicks. Simplify your workflow with tools built for creativity and
-          efficiency—no coding skills needed
-        </p>
-        <a
-          href=""
-          class="rounded-[14px] bg-gradient-to-r from-[#6340FF] via-[#FF40C6] to-[#FF8040] p-1"
-        >
-          <button
-            class="font-inter font-medium text-[10px] md:text-[12px] lg:text-[14px] text-white bg-[#050810] py-[14px] px-[20px] rounded-[12px]"
+          <h1
+            class="font-plus-jakarta-sans font-normal text-[28px] md:text-[48px] lg:text-[96px] w-[96%] text-center lg:w-[1000px] tracking-[-0.2px] lg:leading-[96px]"
           >
-            Start Now Builder
-          </button>
-        </a>
+            Design Stunning Websites in Minutes
+          </h1>
+          <p
+            class="text-[#747B8B] text-[9px] md:text-[12px] lg:text-[14px] font-normal text-center font-plus-jakarta-sans"
+          >
+            Design and launch professional, fully customizable websites in just
+            a few clicks. Simplify your workflow with tools built for creativity
+            and efficiency—no coding skills needed
+          </p>
+          <a
+            href=""
+            class="rounded-[14px] bg-gradient-to-r from-[#6340FF] via-[#FF40C6] to-[#FF8040] p-1"
+          >
+            <button
+              class="font-inter font-medium text-[10px] md:text-[12px] lg:text-[14px] text-white bg-[#050810] py-[14px] px-[20px] rounded-[12px]"
+            >
+              Start Now Builder
+            </button>
+          </a>
+        </div>
+        <div class="mt-[20px] flex justify-center">
+          <img src="./src/assets/preview.svg" alt="" class="" />
+        </div>
+      </main>
+
+      <!-- company -->
+      <div class="flex justify-between items-center w-full py-8">
+        <div class="flex flex-col gap-3">
+          <h2 class="font-plus-jakarta-sans font-normal text-2xl">
+            Trusted by <br />Agency Company
+          </h2>
+          <p
+            class="font-plus-jakarta-sans font-normal text-sm text-[#747B8B] leading-[20px]"
+          >
+            Design and launch professional, fully <br />
+            customizable websites in just a few clicks.
+          </p>
+        </div>
+        <div class="grid grid-cols-3">
+          <img src="./src/assets/Company-Logo-dribble.svg" alt="" />
+          <img src="./src/assets/Company-Logo-figma.svg" alt="" />
+          <img src="./src/assets/Company-Logo-upwork.svg" alt="" />
+          <img src="./src/assets/Company-Logo-pendo.svg" alt="" />
+          <img src="./src/assets/Company-Logo-canva.svg" alt="" /><img
+            src="./src/assets/Company-Logo-framer.svg"
+            alt=""
+          />
+        </div>
       </div>
-      <div class="mt-[20px] flex justify-center">
-        <img src="./src/assets/preview.svg" alt="" class="w-[80%] lg:w-auto" />
+
+      <!-- innovation -->
+
+      <div class="flex justify-between">
+        <div class="flex flex-col gap-4">
+          <div class="flex gap-1 items-center">
+            <div
+              class="block h-3 w-3 rounded-full bg-[#2E66EF]"
+              style="box-shadow: 0, 0, 0, 2px, rgba(46, 101, 239, 0.9)"
+            ></div>
+            <p class="leading-4">New Feature</p>
+          </div>
+          <h1 class="font-halvetica-neue text-[64px] leading-[72px]">
+            Unlock the Power <br />
+            of Innovation
+          </h1>
+        </div>
+        <div class="w-[40%] text-sm font-normal self-end">
+          <p class="text-[#747B8B] font-plus-jakarta-sans">
+            Design and launch professional, fully customizable websites in just
+            a few clicks. Simplify your workflow with tools built for creativity
+            and efficiency—no coding skills needed
+          </p>
+        </div>
       </div>
-    </main>
+      <div class="grid grid-cols-3 gap-5">
+        <div class="flex flex-col gap-5">
+          <div class="p-4 rounded-3xl border border-[#E3E5E8]">
+            <img src="./src/assets/inovation-1.svg" alt="" />
+            <h1 class="font-plus-jakarta-sans font-normal text-2xl">
+              Working with Collaborative Teams
+            </h1>
+            <p
+              class="font-plus-jakarta-sans font-normal text-sm text-[#747B8B]"
+            >
+              Build professional and fully customizable projects effortlessly
+              with teamwork-focused features
+            </p>
+          </div>
+          <div class="p-4 rounded-3xl border border-[#E3E5E8]">
+            <img src="./src/assets/inovation-2.svg" alt="" />
+            <h1 class="font-plus-jakarta-sans font-normal text-2xl">
+              Enhanced Productivity Tools
+            </h1>
+            <p
+              class="font-plus-jakarta-sans font-normal text-sm text-[#747B8B]"
+            >
+              Streamline your tasks and boost efficiency with tools designed for
+              modern workflows
+            </p>
+          </div>
+        </div>
+        <div class="flex flex-col gap-5">
+          <div class="p-4 rounded-3xl border border-[#E3E5E8]">
+            <img src="./src/assets/inovation-3.svg" alt="" />
+            <h1 class="font-plus-jakarta-sans font-normal text-2xl">
+              Seamless Integration
+            </h1>
+            <p
+              class="font-plus-jakarta-sans font-normal text-sm text-[#747B8B]"
+            >
+              Connect your favorite apps and platforms to create a unified
+              workspace experience
+            </p>
+          </div>
+          <div class="p-4 rounded-3xl border border-[#E3E5E8]">
+            <img src="./src/assets/inovation-4.svg" alt="" />
+            <h1 class="font-plus-jakarta-sans font-normal text-2xl">
+              No Code To Make A Website
+            </h1>
+            <p
+              class="font-plus-jakarta-sans font-normal text-sm text-[#747B8B]"
+            >
+              Unleash your creativity with intuitive design tools tailored for
+              all skill levels.
+            </p>
+          </div>
+        </div>
+        <div class="flex flex-col gap-5">
+          <div class="p-4 rounded-3xl border border-[#E3E5E8]">
+            <img src="./src/assets/inovation-5.svg" alt="" />
+            <h1 class="font-plus-jakarta-sans font-normal text-2xl">
+              Live Feedback
+            </h1>
+            <p
+              class="font-plus-jakarta-sans font-normal text-sm text-[#747B8B]"
+            >
+              Receive live feedbacks, wave goodbye to slack notification and
+              stay productive
+            </p>
+          </div>
+          <div class="p-4 rounded-3xl border border-[#E3E5E8]">
+            <img src="./src/assets/inovation-6.svg" alt="" />
+            <h1 class="font-plus-jakarta-sans font-normal text-2xl">
+              Secure and Scalable Solutions
+            </h1>
+            <p
+              class="font-plus-jakarta-sans font-normal text-sm text-[#747B8B]"
+            >
+              Ensure your projects are built on a foundation of security and
+              scalability for long-term success.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="w-full bg-[#050810] min-h-screen grid grid-cols-2 items-center justify-between px-5 md:px-12 lg:px-[100px]"
+    >
+      <div>
+        <div class="flex gap-1 items-center">
+          <div
+            class="block h-3 w-3 rounded-full bg-[#2E66EF]"
+            style="box-shadow: 0, 0, 0, 2px, rgba(46, 101, 239, 0.9)"
+          ></div>
+          <p class="leading-4 text-[#BABDC5]">Documentation</p>
+        </div>
+        <h1>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa
+          impedit excepturi sed soluta nisi sequi quasi suscipit sapiente
+          corporis! Veritatis reprehenderit fugiat accusantium nostrum dolorum
+          voluptatem, qui soluta id ipsam?
+        </h1>
+      </div>
+      <div><img src="./src/assets/documentaion-img.svg" alt="" /></div>
+    </div>
     <script src="./src/script.js"></script>
   </body>
 </html>

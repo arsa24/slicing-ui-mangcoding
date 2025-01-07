@@ -1,14 +1,4 @@
-/* * {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  outline: none;
-  border: none;
-}
-
-navbar styling
-
-landing page styling */
+@import "./font.css";
 
 @tailwind base;
 @tailwind components;
