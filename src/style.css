@@ -21,3 +21,20 @@ landing page styling */
 .dropdown-features:hover ul {
   display: block;
 }
+
+.dropdown-resource ul li:hover,
+.dropdown-features ul li:hover {
+  background-color: #050810;
+  color: #fff;
+}
+
+.dropdown-resource ul li,
+.dropdown-features ul li {
+  padding: 2px 4px;
+  font-size: 14px;
+}
+
+.dropdown-resource ul,
+.dropdown-features ul {
+  box-shadow: 0px 0px 37px 0px rgba(0, 0, 0, 0.1);
+}
