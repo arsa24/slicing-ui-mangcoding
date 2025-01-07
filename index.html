@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/style.css" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <!-- navbar -->
+    <header
+      class="flex justify-between items-center py-[16px] md:py-[14px] px-5 md:px-12 lg:px-[100px] fixed w-full bg-white top-0"
+    >
+      <div class="flex items-center gap-1">
+        <img src="./src/assets/logo.svg" alt="" />
+        <h1
+          class="text-[12px] md:text-[14px] lg:text-[16px] font-inter font-bold"
+        >
+          Flantter Builder
+        </h1>
+      </div>
+      <div
+        class="navigation md:flex bg-white shadow-2xl md:shadow-none flex-col md:flex-row md:h-auto absolute md:static h-screen bottom-0 top-0 right-0 w-[60%] md:w-auto hidden"
+      >
+        <ul
+          class="flex md:justify-between md:items-center md:gap-[14px] lg:gap-[26px] font-plus-jakarta-sans text-[#747B8B] md:flex-row flex-col justify-start items-start w-full p-5 md:p-0 gap-4"
+        >
+          <li class="block md:hidden self-end">
+            <img src="./src/assets/close.svg" alt="" />
+          </li>
+          <li class="flex items-center dropdown">
+            <p class="font-normal text-[14px] flex items-center gap-[4px]">
+              Resource
+            </p>
+            <img src="./src/assets/dropdown.svg" alt="" />
+            <ul
+              class="md:absolute hidden mt-[160px] p-3 shadow-lg rounded-[12px] bg-white"
+            >
+              <li>resource-1</li>
+              <li>resource-2</li>
+              <li>resource-3</li>
+              <li>resource-4</li>
+              <li>resource-5</li>
+            </ul>
+          </li>
+          <li
+            class="flex items-center dropdown"
+            onMouseOver="{mouseFeaturesHover}"
+            onMouseLeave="{mouseFeaturesLeave}"
+          >
+            <p class="font-normal text-[14px] flex items-center gap-[4px]">
+              Features
+            </p>
+            <img src="./src/assets/dropdown.svg" alt="" />
+            <ul
+              class="md:absolute mt-[160px] p-3 shadow-lg rounded-[12px] bg-white hidden"
+            >
+              <li>features-1</li>
+              <li>features-2</li>
+              <li>features-3</li>
+              <li>features-4</li>
+              <li>features-5</li>
+            </ul>
+          </li>
+          <li class="font-normal text-[14px]">
+            <a href="">Blog</a>
+          </li>
+          <li class="font-normal text-[14px]">
+            <a href="">Pricing</a>
+          </li>
+          <li class="font-normal text-[14px]">
+            <a href="">Contact</a>
+          </li>
+          <li class="md:hidden w-full">
+            <ul class="flex justify-between gap-[12px] font-plus-jakarta-sans">
+              <li class="">
+                <a href="" class="text-[12px] lg:text-[14px] font-medium">
+                  Login
+                </a>
+              </li>
+              <li class="">
+                <a
+                  class="text-[12px] lg:text-[14px] font-medium px-[18px] py-[10px] lg:px-[20px] lg:py-[12px] text-white bg-[#050810] rounded-[12px]"
+                  href=""
+                >
+                  Get Started
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="login hidden md:block">
+        <ul class="flex justify-between gap-[12px] font-plus-jakarta-sans">
+          <li class="">
+            <a href="" class="text-[12px] lg:text-[14px] font-medium">
+              Login
+            </a>
+          </li>
+          <li class="">
+            <a
+              class="text-[12px] lg:text-[14px] font-medium px-[18px] py-[10px] lg:px-[20px] lg:py-[12px] text-white bg-[#050810] rounded-[12px]"
+              href=""
+            >
+              Get Started
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="menu md:hidden">
+        <img src="./src/assets/menu.svg" alt="" />
+      </div>
+    </header>
+
+    <!-- heero -->
+    <main
+      class="flex justify-center flex-col items-center min-h-screen md:mt-[80px] mt-[60px] gap-6"
+    >
+      <div class="flex">
+        <img src="./src/assets/figma.svg" alt="" />
+        <img src="./src/assets/flutter.svg" alt="" />
+        <img src="./src/assets/w.svg" alt="" />
+      </div>
+      <div
+        class="flex justify-center flex-col items-center w-[80%] md:w-[500px] lg:w-[900px] gap-5"
+      >
+        <h1
+          class="font-plus-jakarta-sans font-normal text-[32px] md:text-[48px] lg:text-[96px] text-center tracking-[-0.2px] lg:leading-[96px]"
+        >
+          Design Stunning Websites in Minutes
+        </h1>
+        <p
+          class="text-[#747B8B] text-[9px] md:text-[12px] lg:text-[14px] font-normal text-center"
+        >
+          Design and launch professional, fully customizable websites in just a
+          few clicks. Simplify your workflow with tools built for creativity and
+          efficiency—no coding skills needed
+        </p>
+        <a
+          href=""
+          class="rounded-[14px] bg-gradient-to-r from-[#6340FF] via-[#FF40C6] to-[#FF8040] p-1"
+        >
+          <button
+            class="font-inter font-medium text-[10px] md:text-[12px] lg:text-[14px] text-white bg-[#050810] py-[14px] px-[20px] rounded-[12px]"
+          >
+            Start Now Builder
+          </button>
+        </a>
+      </div>
+      <div class="mt-[20px] flex justify-center">
+        <img src="./src/assets/preview.svg" alt="" class="w-[80%] lg:w-auto" />
+      </div>
+    </main>
+    <script src="./src/script.js"></script>
+  </body>
+</html>
