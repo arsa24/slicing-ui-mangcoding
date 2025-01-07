@@ -13,3 +13,11 @@ landing page styling */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.dropdown-resource:hover ul {
+  display: block;
+}
+
+.dropdown-features:hover ul {
+  display: block;
+}
