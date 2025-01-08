@@ -29,13 +29,15 @@
   box-shadow: 0px 0px 37px 0px rgba(0, 0, 0, 0.1);
 }
 
-@layer utilities {
-  .no-scrollbar::-webkit-scrollbar {
-    display: none;
-  }
+.tamplate-bg {
+  background-image: radial-gradient(rgba(5, 8, 16, 0.7), #050810);
+}
 
-  .no-scrollbar {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-  }
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
