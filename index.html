@@ -289,25 +289,456 @@
       </div>
     </div>
     <div
-      class="w-full bg-[#050810] min-h-screen grid grid-cols-2 items-center justify-between px-5 md:px-12 lg:px-[100px]"
+      class="w-full bg-[#050810] min-h-screen grid grid-cols-2 items-center justify-between px-5 md:px-12 lg:px-[100px] gap-10"
     >
       <div>
         <div class="flex gap-1 items-center">
           <div
-            class="block h-3 w-3 rounded-full bg-[#2E66EF]"
+            class="block h-3 w-3 rounded-full bg-[#2E66EF] mb-3"
             style="box-shadow: 0, 0, 0, 2px, rgba(46, 101, 239, 0.9)"
           ></div>
-          <p class="leading-4 text-[#BABDC5]">Documentation</p>
+          <p class="text-[#BABDC5]">Documentation</p>
         </div>
-        <h1>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa
-          impedit excepturi sed soluta nisi sequi quasi suscipit sapiente
-          corporis! Veritatis reprehenderit fugiat accusantium nostrum dolorum
-          voluptatem, qui soluta id ipsam?
-        </h1>
+        <div class="text-white font-plus-jakarta-sans grid gap-6">
+          <h1 class="font-medium text-[60px] leading-[64px]">
+            Documentation that converts users
+          </h1>
+          <p class="!text-[#E3E5E8] font-normal text-sm leading-5">
+            Deliver user-friendly, clear, and actionable documentation that
+            simplifies complex processes, builds trust, and drives users toward
+            success effortlessly.
+          </p>
+        </div>
+        <div class="text-white font-inter flex flex-col gap-8 mt-10">
+          <div>
+            <h1
+              class="font-medium text-xl leading-6 border-l-2 border-white px-3"
+            >
+              Working Space
+            </h1>
+            <p class="border-l-2 border-white/20 px-3">
+              Customize your coding experience and expand your skills
+              effortlessly.
+            </p>
+          </div>
+          <div class="border-l-2 border-white/20 px-3">
+            <h1 class="font-medium text-xl leading-6">Dashboard Menu</h1>
+          </div>
+          <div class="border-l-2 border-white/20 px-3">
+            <h1 class="font-medium text-xl leading-6">Template Marketplace</h1>
+          </div>
+          <div class="border-l-2 border-white/20 px-3">
+            <h1 class="font-medium text-xl leading-6">Updated Liblary</h1>
+          </div>
+        </div>
       </div>
       <div><img src="./src/assets/documentaion-img.svg" alt="" /></div>
     </div>
+    <!-- pricing -->
+    <div class="w-full min-h-screen px-5 md:px-12 lg:px-[100px] py-20">
+      <div class="grid grid-cols-2">
+        <div class="grid gap-[14px]">
+          <div class="flex gap-1 items-center">
+            <div
+              class="block h-3 w-3 rounded-full bg-[#2E66EF] mb-3"
+              style="box-shadow: 0, 0, 0, 2px, rgba(46, 101, 239, 0.9)"
+            ></div>
+            <p class="text-[#747B8B]">Pricing plane</p>
+          </div>
+          <div class="grid gap-6">
+            <h1 class="font-halvetica-neue text-[64px] leading-[72px]">
+              Choose Pricing
+            </h1>
+            <p class="font-plus-jakarta-sans text-sm leading-5 text-[#747B8B]">
+              Deliver user-friendly, clear, and actionable documentation that
+              simplifies complex processes, builds trust, and drives users
+              toward success effortlessly.
+            </p>
+          </div>
+        </div>
+        <div
+          class="self-end justify-self-end gap-8 flex font-inter font-normal leading-5"
+        >
+          <h1>Monthly</h1>
+          <h1 class="text-[#8D8F9B]">Yearly</h1>
+        </div>
+      </div>
+      <div class="grid grid-cols-3 gap-6 mt-10">
+        <!-- basic plan -->
+        <div class="bg-slate-200 pb-2 rounded-[14px]">
+          <div class="p-4 grid gap-4">
+            <h3 class="font-halvetica-neue text-[20px] leading-6">
+              Basic Plan
+            </h3>
+            <div class="flex font-halvetica-neue items-end text-[#1D1B0E]">
+              <h1 class="font-medium text-[40px] self-end leading-[34px]">
+                $10/
+              </h1>
+              <p class="leading-[20px]">Month</p>
+            </div>
+            <p class="text-[#8D8F9B] font-inter font-normal leading-5">
+              Ideal for individuals and small projects.
+            </p>
+            <a
+              href="#"
+              class="font-plus-jakarta-sans font-medium text-sm text-white"
+              ><button class="bg-[#050810] w-full py-[14px] rounded-[14px]">
+                Join Member
+              </button></a
+            >
+          </div>
+          <div class="px-6 grid gap-5">
+            <div class="flex gap-[10px]">
+              <img src="./src/assets/checkIcon.svg" alt="" />
+              <p>Access to basic design tools</p>
+            </div>
+            <div class="flex gap-[10px]">
+              <img src="./src/assets/checkIcon.svg" alt="" />
+              <p>5 projects per month</p>
+            </div>
+            <div class="flex gap-[10px]">
+              <img src="./src/assets/checkIcon.svg" alt="" />
+              <p>Standard templates library</p>
+            </div>
+            <div class="flex gap-[10px]">
+              <img src="./src/assets/checkIcon.svg" alt="" />
+              <p>Email support</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- preffesional -->
+        <div class="bg-slate-200 rounded-[14px] pb-2">
+          <div class="p-4 grid gap-4">
+            <h3 class="font-halvetica-neue text-[20px] leading-6">
+              Professional Plan
+            </h3>
+            <div class="flex font-halvetica-neue items-end text-[#1D1B0E]">
+              <h1 class="font-medium text-[40px] self-end leading-[34px]">
+                $25/
+              </h1>
+              <p class="leading-[20px]">Month</p>
+            </div>
+            <p class="text-[#8D8F9B] font-inter font-normal leading-5">
+              Perfect for freelancers and small businesses.
+            </p>
+            <a
+              href="#"
+              class="font-plus-jakarta-sans font-medium text-sm text-white"
+              ><button class="bg-[#050810] w-full py-[14px] rounded-[14px]">
+                Join Member
+              </button></a
+            >
+          </div>
+          <div class="px-6 grid gap-5">
+            <div class="flex gap-[10px]">
+              <img src="./src/assets/checkIcon.svg" alt="" />
+              <p>Access to all design tools</p>
+            </div>
+            <div class="flex gap-[10px]">
+              <img src="./src/assets/checkIcon.svg" alt="" />
+              <p>Unlimited projects</p>
+            </div>
+            <div class="flex gap-[10px]">
+              <img src="./src/assets/checkIcon.svg" alt="" />
+              <p>Premium templates library</p>
+            </div>
+            <div class="flex gap-[10px]">
+              <img src="./src/assets/checkIcon.svg" alt="" />
+              <p>Priority email support</p>
+            </div>
+            <div class="flex gap-[10px]">
+              <img src="./src/assets/checkIcon.svg" alt="" />
+              <p>Collaboration tools for teams</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- bussiness -->
+
+        <div class="bg-[#050810] pb-2 rounded-[14px]">
+          <div class="p-4 grid gap-4">
+            <div class="flex justify-between">
+              <h3 class="font-halvetica-neue text-[20px] leading-6 text-white">
+                Business Plan
+              </h3>
+              <p
+                class="py-[6px] px-2 bg-white text-[#8D8F9B] font-plus-jakarta-sans rounded-lg"
+              >
+                Recomendation
+              </p>
+            </div>
+            <div class="flex font-halvetica-neue items-end text-white">
+              <h1 class="font-medium text-[40px] self-end leading-[34px]">
+                $50/
+              </h1>
+              <p class="leading-[20px] text-white">Month</p>
+            </div>
+            <p class="text-[#8D8F9B] font-inter font-normal leading-5">
+              Best for growing businesses and enterprises.
+            </p>
+            <a
+              href="#"
+              class="font-plus-jakarta-sans font-medium text-sm text-[#050810] bg-gradient-to-r from-[#6340FF] via-[#FF40C6] to-[#FF8040] p-1 rounded-[14px]"
+              ><button class="bg-white w-full py-[14px] rounded-[14px]">
+                Join Member
+              </button></a
+            >
+          </div>
+          <div class="px-6 grid gap-5 text-white">
+            <div class="flex gap-[10px]">
+              <img src="./src/assets/checkIcon-dark.svg" alt="" />
+              <p>Advanced analytics tools</p>
+            </div>
+            <div class="flex gap-[10px]">
+              <img src="./src/assets/checkIcon-dark.svg" alt="" />
+              <p>Custom branding options</p>
+            </div>
+            <div class="flex gap-[10px]">
+              <img src="./src/assets/checkIcon-dark.svg" alt="" />
+              <p>24/7 premium support</p>
+            </div>
+            <div class="flex gap-[10px]">
+              <img src="./src/assets/checkIcon-dark.svg" alt="" />
+              <p>Dedicated account manager</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- faq -->
+    <div
+      class="w-full px-5 md:px-12 lg:px-[100px] gap-10 py-20 grid grid-cols-2"
+    >
+      <div>
+        <div class="flex gap-1 items-center mb-[34px]">
+          <div
+            class="block h-3 w-3 rounded-full bg-[#2E66EF]"
+            style="box-shadow: 0, 0, 0, 2px, rgba(46, 101, 239, 0.9)"
+          ></div>
+          <p class="leading-4">FAQ</p>
+        </div>
+        <div class="grid gap-5">
+          <h1 class="font-halvetica-neue text-[64px] leading-[72px]">
+            Frequently asked question
+          </h1>
+          <p class="font-plus-jakarta-sans text-sm leading-5 text-[#747B8B]">
+            We've been told it's possible to supercharge the design process.
+            Instead of reinventing the wheel, we chose to enhance it –
+            delivering exceptional results.
+          </p>
+        </div>
+      </div>
+      <div class="grid gap-4">
+        <div
+          id="accordion-1"
+          class="px-5 py-3 border rounded-sm border-[#E3E5E8] grid gap-4"
+        >
+          <button
+            class="flex justify-between w-full items-center"
+            onclick="toggleAccordion(1)"
+          >
+            <span class="font-halvetica-neue text-[20px] leading-6 text-left"
+              >Why should you use mangcoding ?</span
+            >
+
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M6 9L12 15L18 9"
+                stroke="#050810"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+          <div
+            class="accordion-content-1 hidden transition-all duration-300 ease-in-out overflow-hidden"
+          >
+            <p
+              class="font-plus-jakarta-sans text-sm leading-[18px] text-[#8B919E]"
+            >
+              Mangcoding offers expert SaaS finance solutions, providing secure,
+              scalable, and efficient platforms designed to streamline financial
+              operations for your business.
+            </p>
+          </div>
+        </div>
+
+        <div
+          id="accordion-2"
+          class="px-5 py-4 border rounded-sm border-[#E3E5E8] grid gap-4"
+        >
+          <button
+            class="flex justify-between w-full items-center"
+            onclick="toggleAccordion(2)"
+          >
+            <span class="font-halvetica-neue text-[20px] leading-6 text-left"
+              >What makes Mangcoding's SaaS finance solutions secure?</span
+            >
+
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M6 9L12 15L18 9"
+                stroke="#050810"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+          <div
+            class="accordion-content-2 hidden transition-all duration-300 ease-in-out overflow-hidden"
+          >
+            <p
+              class="font-plus-jakarta-sans text-sm leading-[18px] text-[#8B919E]"
+            >
+              Mangcoding offers expert SaaS finance solutions, providing secure,
+              scalable, and efficient platforms designed to streamline financial
+              operations for your business.
+            </p>
+          </div>
+        </div>
+        <!--  -->
+        <div
+          id="accordion-3"
+          class="px-5 py-4 border rounded-sm border-[#E3E5E8] grid gap-4"
+        >
+          <button
+            class="flex justify-between w-full items-center"
+            onclick="toggleAccordion(3)"
+          >
+            <span class="font-halvetica-neue text-[20px] leading-6 text-left"
+              >How can Mangcoding’s SaaS finance solutions help my
+              business?</span
+            >
+
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M6 9L12 15L18 9"
+                stroke="#050810"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+          <div
+            class="accordion-content-3 hidden transition-all duration-300 ease-in-out overflow-hidden"
+          >
+            <p
+              class="font-plus-jakarta-sans text-sm leading-[18px] text-[#8B919E]"
+            >
+              Mangcoding offers expert SaaS finance solutions, providing secure,
+              scalable, and efficient platforms designed to streamline financial
+              operations for your business.
+            </p>
+          </div>
+        </div>
+        <!--  -->
+        <div
+          id="accordion-4"
+          class="px-5 py-4 border rounded-sm border-[#E3E5E8] grid gap-4"
+        >
+          <button
+            class="flex justify-between w-full items-center"
+            onclick="toggleAccordion(4)"
+          >
+            <span class="font-halvetica-neue text-[20px] leading-6 text-left"
+              >Is Mangcoding’s SaaS finance solution scalable?</span
+            >
+
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M6 9L12 15L18 9"
+                stroke="#050810"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+          <div
+            class="accordion-content-4 hidden transition-all duration-300 ease-in-out overflow-hidden"
+          >
+            <p
+              class="font-plus-jakarta-sans text-sm leading-[18px] text-[#8B919E]"
+            >
+              Mangcoding offers expert SaaS finance solutions, providing secure,
+              scalable, and efficient platforms designed to streamline financial
+              operations for your business.
+            </p>
+          </div>
+        </div>
+        <!--  -->
+        <div
+          id="accordion-5"
+          class="px-5 py-4 border rounded-sm border-[#E3E5E8] grid gap-4"
+        >
+          <button
+            class="flex justify-between w-full items-center"
+            onclick="toggleAccordion(5)"
+          >
+            <span class="font-halvetica-neue text-[20px] leading-6 text-left"
+              >Can Mangcoding integrate with existing financial systems?</span
+            >
+
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M6 9L12 15L18 9"
+                stroke="#050810"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+          <div
+            class="accordion-content-5 hidden transition-all duration-300 ease-in-out overflow-hidden"
+          >
+            <p
+              class="font-plus-jakarta-sans text-sm leading-[18px] text-[#8B919E]"
+            >
+              Mangcoding offers expert SaaS finance solutions, providing secure,
+              scalable, and efficient platforms designed to streamline financial
+              operations for your business.
+            </p>
+          </div>
+        </div>
+        <!--  -->
+      </div>
+    </div>
+
     <script src="./src/script.js"></script>
   </body>
 </html>
