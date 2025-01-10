@@ -1,25 +1,26 @@
-// accordion
-function toggleAccordion(i) {
-  const accordion = [1, 2, 3, 4, 5];
-  accordion.map((a) => {
-    const icon = document.querySelector(`#accordion-${a} button svg`);
-    const content = document.querySelector(`.accordion-content-${a}`);
-    if (a == i) {
-      if (content.classList.contains("hidden")) {
-        content.classList.remove("hidden");
-        icon.classList.add("rotate-180");
-        icon.classList.remove("rotate-0");
-        console.log(true);
-      } else {
-        console.log(false);
-        icon.classList.remove("rotate-180");
-        content.classList.add("hidden");
-        icon.classList.add("rotate-0");
-      }
-    } else {
-      icon.classList.remove("rotate-180");
-      content.classList.add("hidden");
-      icon.classList.add("rotate-0");
-    }
+import Swiper from "swiper";
+import "swiper/css";
+
+// navbar dropdown
+
+// swiper
+const swiper = new Swiper(".swiper", {
+  slidesPerView: 3,
+  centeredSlides: true,
+  loop: true,
+  slideActiveClass: "active-slide",
+});
+
+// acordion
+let acordions = document.querySelectorAll(".acordion");
+acordions.forEach((item) => {
+  item.addEventListener("click", () => {
+    acordions.forEach((element) => {
+      element.addEventListener("click", () => {
+        element.classList.remove("active-acordion");
+        console.log("click");
+      });
+    });
+    item.classList.add("active-acordion");
   });
-}
+});
