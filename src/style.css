@@ -23,10 +23,46 @@
   background-image: radial-gradient(rgba(5, 8, 16, 0.7), #050810);
 }
 
-.acordion span {
-  transform: translateY(120px);
+.dropdown:hover a svg {
+  transform: rotate(180deg);
 }
 
-.active-acordion {
-  transform: translateY(0);
+.dropdown a svg {
+  transition: all ease 0.3s;
+}
+
+.dropdown ul li {
+  display: flex;
+  justify-content: center;
+  padding: 4px;
+  font-size: 12px;
+}
+
+.dropdown ul li:hover {
+  opacity: 0.8;
+}
+
+.dropdown ul {
+  box-shadow: 0px 0px 15px -3px rgba(0, 0, 0, 0.1);
+  padding: 6px;
+  min-width: 100%;
+  border: 1px solid #e3e5e8;
+  border-radius: 8px;
+  background-color: white;
+  opacity: 0;
+  float: left;
+  left: 0;
+  visibility: hidden;
+  -webkit-transition: all ease 0.3s;
+  -moz-transition: all ease 0.3s;
+  -ms-transition: all ease 0.3s;
+  -o-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+  top: 20px;
+}
+
+.dropdown:hover ul {
+  opacity: 1;
+  top: 25px;
+  visibility: visible;
 }
