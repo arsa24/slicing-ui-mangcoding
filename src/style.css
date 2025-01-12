@@ -4,7 +4,7 @@
 @tailwind utilities;
 
 .title-header {
-  @apply font-medium text-[60px] leading-[64px] font-plus-jakarta-sans;
+  @apply font-medium text-2xl leading-7 text-center md:text-left md:text-[60px] md:leading-[64px] font-plus-jakarta-sans;
 }
 
 .swiper-wrapper {
@@ -65,4 +65,12 @@
   opacity: 1;
   top: 25px;
   visibility: visible;
+}
+
+.pricing-active {
+  color: #000;
+}
+
+.discount {
+  font-size: 10px;
 }

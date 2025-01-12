@@ -14,20 +14,16 @@
     />
   </head>
   <body>
-    <main class="">
+    <main>
       <!-- header -->
-      <header class="sticky top-0 bg-white lg:py-3 lg:px-10 z-[999]">
+      <header class="sticky top-0 bg-white py-3 px-6 lg:py-3 lg:px-10 z-[999]">
         <nav class="flex justify-between items-center">
           <div class="flex items-center gap-1">
             <img src="./src/assets/logo.svg" alt="" />
-            <a
-              class="text-[12px] md:text-[14px] lg:text-[16px] font-inter font-bold"
-            >
-              Flantter Builder
-            </a>
+            <a class="text-[16px] font-inter font-bold"> Flantter </a>
           </div>
           <div class="">
-            <ul class="flex gap-[26px]">
+            <ul class="md:flex gap-[26px] hidden">
               <li class="dropdown relative">
                 <a
                   class="font-normal text-[14px] flex items-center gap-[4px]"
@@ -104,7 +100,10 @@
             </ul>
           </div>
           <div class="flex gap-3 items-center">
-            <a href="#" class="text-[12px] lg:text-[14px] font-medium">
+            <a
+              href="#"
+              class="text-[12px] lg:text-[14px] font-medium hover:opacity-80"
+            >
               <button>Login</button>
             </a>
             <a
@@ -117,21 +116,21 @@
         </nav>
       </header>
       <!-- hero section -->
-      <section class="hero lg:py-[60px] lg:px-10">
-        <div class="container">
-          <div class="flex flex-col justify-center items-center gap-4 lg:pb-10">
+      <section class="hero py-8 px-6 lg:py-[60px] lg:px-10">
+        <div class="gap-6 grid">
+          <div class="flex flex-col justify-center items-center gap-4">
             <div class="flex">
               <img src="./src/assets/figma.svg" alt="" />
               <img src="./src/assets/flutter.svg" alt="" />
               <img src="./src/assets/w.svg" alt="" />
             </div>
             <h1
-              class="font-plus-jakarta-sans font-normal text-[28px] md:text-[48px] lg:text-[96px] w-[96%] text-center lg:w-[1000px] tracking-[-0.2px] lg:leading-[96px]"
+              class="font-plus-jakarta-sans font-normal text-[40px] md:text-[48px] lg:text-[96px] w-[96%] text-center lg:w-[1000px] tracking-[-0.2px] lg:leading-[96px]"
             >
               Design Stunning Websites in Minutes
             </h1>
             <p
-              class="text-[#747B8B] text-[9px] md:text-[12px] lg:text-[14px] font-normal text-center font-plus-jakarta-sans"
+              class="text-[#747B8B] text-[14px] font-normal text-center font-plus-jakarta-sans"
             >
               Design and launch professional, fully customizable websites in
               just a few clicks. Simplify your workflow with tools built for
@@ -139,7 +138,7 @@
             </p>
             <a
               href=""
-              class="rounded-[14px] bg-gradient-to-r from-[#6340FF] via-[#FF40C6] to-[#FF8040] p-1"
+              class="rounded-[14px] bg-gradient-to-r from-[#6340FF] via-[#FF40C6] to-[#FF8040] p-1 hover:opacity-90"
             >
               <button
                 class="font-inter font-medium text-[10px] md:text-[12px] lg:text-[14px] text-white bg-[#050810] py-[14px] px-[20px] rounded-[12px]"
@@ -155,28 +154,19 @@
       </section>
 
       <!-- company -->
-      <section class="company lg:py-[60px] lg:px-10">
+      <section class="company py-8 px-6 lg:py-[60px] lg:px-10">
         <div class="grid gap-8">
-          <div class="container grid grid-cols-2">
+          <div class="container grid md:grid-cols-2">
             <div class="flex flex-col gap-3 justify-center">
-              <div class="flex items-center">
-                <div class="w-5 h-5 flex items-center p-1">
-                  <span
-                    class="h-full w-full block rounded-full bg-[#2E66EF]"
-                    style="box-shadow: 0 0 10px -2px rgba(46, 101, 239, 0.9)"
-                  ></span>
-                </div>
-                <p class="text-[#747B8B] font-plus-jakarta-sans">New Feature</p>
-              </div>
-              <h2 class="title-header">Trusted by <br />Agency Company</h2>
+              <h2 class="title-header">Trusted by Agency Company</h2>
               <p
-                class="font-plus-jakarta-sans font-normal text-sm text-[#747B8B] leading-[20px]"
+                class="font-plus-jakarta-sans text-center md:text-left font-normal text-sm text-[#747B8B] leading-[20px]"
               >
                 Design and launch professional, fully <br />
                 customizable websites in just a few clicks.
               </p>
             </div>
-            <div class="grid grid-cols-3 gap-4">
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
               <img src="./src/assets/Company-Logo-dribble.svg" alt="" />
               <img src="./src/assets/Company-Logo-figma.svg" alt="" />
               <img src="./src/assets/Company-Logo-upwork.svg" alt="" />
@@ -187,13 +177,44 @@
               />
             </div>
           </div>
-          <div class="grid grid-cols-3 grid-rows-3 gap-5">
+        </div>
+      </section>
+
+      <!-- new feature -->
+      <section class="new-features py-8 px-6 lg:py-[60px] lg:px-10">
+        <div>
+          <div class="grid md:grid-cols-2 gap-8">
+            <div class="grid gap-[14px]">
+              <div class="flex items-center justify-center md:justify-normal">
+                <div class="w-5 h-5 flex items-center p-1">
+                  <span
+                    class="h-full w-full block rounded-full bg-[#2E66EF]"
+                    style="box-shadow: 0 0 10px -2px rgba(46, 101, 239, 0.9)"
+                  ></span>
+                </div>
+                <p class="text-[#BABDC5] font-plus-jakarta-sans">New Feature</p>
+              </div>
+              <h2 class="title-header">Unlock the Power of Innovation</h2>
+            </div>
+            <div class="self-end">
+              <p
+                class="text-[#747B8B] font-plus-jakarta-sans text-center md:text-left"
+              >
+                Design and launch professional, fully customizable websites in
+                just a few clicks. Simplify your workflow with tools built for
+                creativity and efficiency—no coding skills needed
+              </p>
+            </div>
+          </div>
+          <div class="grid md:grid-cols-3 md:grid-rows-3 gap-5">
             <div
-              class="row-span-2 p-4 rounded-3xl border border-[#E3E5E8] flex flex-col justify-between"
+              class="md:row-span-2 p-4 rounded-3xl border border-[#E3E5E8] flex flex-col justify-between"
             >
               <img src="./src/assets/inovation-1.svg" alt="" />
               <div>
-                <h3 class="font-plus-jakarta-sans font-normal text-2xl">
+                <h3
+                  class="font-plus-jakarta-sans font-normal md:text-2xl text-xl leading-6 md:leading-8"
+                >
                   Working with Collaborative Teams
                 </h3>
                 <p
@@ -209,7 +230,9 @@
             >
               <img src="./src/assets/inovation-3.svg" alt="" />
               <div>
-                <h3 class="font-plus-jakarta-sans font-normal text-2xl">
+                <h3
+                  class="font-plus-jakarta-sans font-normal md:text-2xl text-xl leading-6 md:leading-8"
+                >
                   Seamless Integration
                 </h3>
                 <p
@@ -221,11 +244,13 @@
               </div>
             </div>
             <div
-              class="row-span-2 p-4 rounded-3xl border border-[#E3E5E8] flex flex-col justify-between"
+              class="md:row-span-2 p-4 rounded-3xl border border-[#E3E5E8] flex flex-col justify-between"
             >
               <img src="./src/assets/inovation-5.svg" alt="" />
               <div>
-                <h3 class="font-plus-jakarta-sans font-normal text-2xl">
+                <h3
+                  class="font-plus-jakarta-sans font-normal md:text-2xl text-xl leading-6 md:leading-8"
+                >
                   Live Feedback
                 </h3>
                 <p
@@ -237,11 +262,13 @@
               </div>
             </div>
             <div
-              class="col-start-1 row-start-3 p-4 rounded-3xl border border-[#E3E5E8] flex flex-col justify-between"
+              class="md:col-start-1 row-start-3 p-4 rounded-3xl border border-[#E3E5E8] flex flex-col justify-between"
             >
               <img src="./src/assets/inovation-2.svg" alt="" />
               <div>
-                <h3 class="font-plus-jakarta-sans font-normal text-2xl">
+                <h3
+                  class="font-plus-jakarta-sans font-normal md:text-2xl text-xl leading-6 md:leading-8"
+                >
                   Enhanced Productivity Tools
                 </h3>
                 <p
@@ -254,7 +281,7 @@
             </div>
 
             <div
-              class="row-span-2 col-start-2 row-start-2 p-4 rounded-3xl border border-[#E3E5E8] flex flex-col justify-between"
+              class="md:row-span-2 md:col-start-2 md:row-start-2 p-4 rounded-3xl border border-[#E3E5E8] flex flex-col justify-between"
             >
               <img
                 src="./src/assets/inovation-4.svg"
@@ -262,7 +289,9 @@
                 class="w-full h-full"
               />
               <div>
-                <h3 class="font-plus-jakarta-sans font-normal text-2xl">
+                <h3
+                  class="font-plus-jakarta-sans font-normal md:text-2xl text-xl leading-6 md:leading-8"
+                >
                   No Code To Make A Website
                 </h3>
                 <p
@@ -274,11 +303,13 @@
               </div>
             </div>
             <div
-              class="col-start-3 row-start-3 p-4 rounded-3xl border border-[#E3E5E8] flex flex-col justify-between"
+              class="md:col-start-3 md:row-start-3 p-4 rounded-3xl border border-[#E3E5E8] flex flex-col justify-between"
             >
               <img src="./src/assets/inovation-6.svg" alt="" />
               <div>
-                <h3 class="font-plus-jakarta-sans font-normal text-2xl">
+                <h3
+                  class="font-plus-jakarta-sans font-normal md:text-2xl text-xl leading-6 md:leading-8"
+                >
                   Secure and Scalable Solutions
                 </h3>
                 <p
@@ -310,10 +341,12 @@
           />
         </div>
 
-        <div class="flex lg:py-[60px] lg:px-10 items-center gap-10 z-50">
+        <div
+          class="flex py-8 px-6 lg:py-[60px] lg:px-10 flex-col md:flex-row items-center gap-10 z-50"
+        >
           <div class="grid gap-10">
             <div class="grid gap-4">
-              <div class="flex items-center">
+              <div class="flex items-center justify-center md:justify-normal">
                 <div class="w-5 h-5 flex items-center p-1">
                   <span
                     class="h-full w-full block rounded-full bg-[#2E66EF]"
@@ -327,7 +360,7 @@
               <h2 class="title-header text-white">
                 Documentation that converts users
               </h2>
-              <p class="!text-[#E3E5E8] font-normal text-sm leading-5">
+              <p class="!text-[#E3E5E8] font-normal text-sm leading-5 text-center md:text-left">
                 Deliver user-friendly, clear, and actionable documentation that
                 simplifies complex processes, builds trust, and drives users
                 toward success effortlessly.
@@ -358,14 +391,20 @@
               </div>
             </div>
           </div>
-          <div><img src="./src/assets/documentaion-img.svg" alt="" /></div>
+          <div>
+            <img
+              src="./src/assets/documentaion-img.svg"
+              class="w-full"
+              alt=""
+            />
+          </div>
         </div>
       </section>
 
       <!-- pricing -->
-      <section class="pricing lg:py-[60px] lg:px-10">
+      <section class="pricing py-8 px-6 lg:py-[60px] lg:px-10">
         <div class="grid gap-8">
-          <div class="flex justify-between">
+          <div class="flex md:flex-row justify-center md:justify-between gap-6 md:gap-0 flex-col items-center">
             <div class="flex flex-col gap-3 justify-center">
               <div class="flex items-center">
                 <div class="w-5 h-5 flex items-center p-1">
@@ -388,30 +427,36 @@
               </p>
             </div>
             <div
-              class="self-end justify-self-end gap-8 flex font-inter font-normal leading-5"
+              class="md:self-end md:justify-self-end gap-8 flex font-inter font-normal leading-5 text-[#8D8F9B]"
             >
-              <a href=""><button>Monthly</button></a>
-              <a href="" class="text-[#8D8F9B]"><button>Yearly</button></a>
+              <button id="monthly" class="pricing-active">Monthly</button>
+              <button id="yearly">Yearly</button>
             </div>
           </div>
           <!-- plan -->
-          <div class="grid grid-cols-3 gap-6 mt-10">
+          <div class="grid md:grid-cols-3 gap-6 mt-10">
             <!-- basic plan -->
             <div
-              class="bg-[#e7e7e7] overflow-hidden pb-2 rounded-[14px] relative"
+              class="bg-[#e7e7e7] overflow-hidden pb-2 rounded-[14px] relative basic"
             >
               <div class="absolute w-full">
                 <img src="./src/assets/ellipse.png" alt="" class="w-full" />
               </div>
-              <div class="p-4 grid gap-4 z-50">
+              <div
+                class="p-4 grid gap-4 z-50 plan-card"
+                data-month="10"
+                data-year="120"
+              >
                 <h3 class="font-halvetica-neue text-[20px] leading-6">
                   Basic Plan
                 </h3>
                 <div class="flex font-halvetica-neue items-end text-[#1D1B0E]">
-                  <h1 class="font-medium text-[40px] self-end leading-[34px]">
+                  <p
+                    class="font-medium text-[40px] self-end leading-[34px] price"
+                  >
                     $10/
-                  </h1>
-                  <p class="leading-[20px]">Month</p>
+                  </p>
+                  <p class="time leading-[20px]">Month</p>
                 </div>
                 <p class="text-[#8D8F9B] font-inter font-normal leading-5">
                   Ideal for individuals and small projects.
@@ -446,20 +491,26 @@
 
             <!-- preffesional -->
             <div
-              class="bg-[#e7e7e7] overflow-hidden pb-2 rounded-[14px] relative"
+              class="bg-[#e7e7e7] overflow-hidden pb-2 rounded-[14px] relative proffesional"
             >
               <div class="absolute w-full">
                 <img src="./src/assets/ellipse.png" alt="" class="w-full" />
               </div>
-              <div class="p-4 grid gap-4 z-50">
+              <div
+                class="p-4 grid gap-4 z-50 plan-card"
+                data-month="25"
+                data-year="300"
+              >
                 <h3 class="font-halvetica-neue text-[20px] leading-6">
                   Professional Plan
                 </h3>
                 <div class="flex font-halvetica-neue items-end text-[#1D1B0E]">
-                  <h1 class="font-medium text-[40px] self-end leading-[34px]">
+                  <p
+                    class="font-medium text-[40px] self-end leading-[34px] price"
+                  >
                     $25/
-                  </h1>
-                  <p class="leading-[20px]">Month</p>
+                  </p>
+                  <p class="leading-[20px] time">Month</p>
                 </div>
                 <p class="text-[#8D8F9B] font-inter font-normal leading-5">
                   Perfect for freelancers and small businesses.
@@ -498,9 +549,13 @@
 
             <!-- bussiness -->
 
-            <div class="bg-[#050810] pb-2 rounded-[14px]">
+            <div class="bg-[#050810] pb-2 rounded-[14px] bussiness">
               <div class="p-4 grid gap-4">
-                <div class="flex justify-between">
+                <div
+                  class="flex justify-between plan-card"
+                  data-year="600"
+                  data-month="50"
+                >
                   <h3
                     class="font-halvetica-neue text-[20px] leading-6 text-white"
                   >
@@ -513,10 +568,12 @@
                   </p>
                 </div>
                 <div class="flex font-halvetica-neue items-end text-white">
-                  <h1 class="font-medium text-[40px] self-end leading-[34px]">
+                  <p
+                    class="font-medium text-[40px] self-end leading-[34px] price"
+                  >
                     $50/
-                  </h1>
-                  <p class="leading-[20px] text-white">Month</p>
+                  </p>
+                  <p class="time leading-[20px] text-white">Month</p>
                 </div>
                 <p class="text-[#8D8F9B] font-inter font-normal leading-5">
                   Best for growing businesses and enterprises.
@@ -552,8 +609,8 @@
         </div>
       </section>
       <!-- faq -->
-      <section class="faq lg:py-[60px] lg:px-10">
-        <div class="grid grid-cols-2 gap-[60px]">
+      <section class="faq py-8 px-6 lg:py-[60px] lg:px-10">
+        <div class="grid md:grid-cols-2 gap-[60px]">
           <div class="flex flex-col gap-[14px] justify-center">
             <div class="flex items-center">
               <div class="w-5 h-5 flex items-center p-1">
@@ -684,7 +741,7 @@
         </div>
       </section>
       <!-- testimoni -->
-      <section class="testimoni lg:py-[60px] lg:px-10">
+      <section class="testimoni py-8 px-6 lg:py-[60px] lg:px-10">
         <div>
           <div class="flex flex-col gap-[14px] justify-center items-center">
             <div class="flex items-center">
@@ -895,7 +952,7 @@
       </section>
     </main>
     <!-- footer -->
-    <footer class="grid grid-cols-2 p-[100px] bg-[#050810]">
+    <footer class="grid md:grid-cols-2 py-10 px-6 md:p-[100px] bg-[#050810]">
       <div class="flex flex-col gap-20 w-80">
         <div class="grid gap-10">
           <div class="flex items-center gap-1">
@@ -910,60 +967,59 @@
           </p>
         </div>
         <p class="text-[#C7CAD1] font-inter">
-          &copy; 2024flantter Builder. All rights reserved.
+          &copy; 2024 Flantter Builder. All rights reserved.
         </p>
       </div>
-      <div class="flex flex-col justify-between">
-        <div class="grid grid-cols-3">
-          <div class="grid gap-6">
-            <a href="#" class="text-white font-halvetica-neue">Features</a>
-            <ul class="text-[#C7CAD1] font-halvetica-neue grid gap-[18px]">
-              <li><a href="">Explore Features</a></li>
-              <li><a href="">Key Benefits</a></li>
-            </ul>
-          </div>
-          <!--  -->
-          <div class="grid gap-6">
-            <a href="#" class="text-white font-halvetica-neue">Pricing</a>
-            <ul class="text-[#C7CAD1] font-halvetica-neue grid gap-[18px]">
-              <li><a href="">Pricing Plans</a></li>
-              <li><a href="">Discounts & Offers</a></li>
-            </ul>
-          </div>
-          <!--  -->
-          <div class="grid gap-6">
-            <a href="#" class="text-white font-halvetica-neue">About Us</a>
-            <ul class="text-[#C7CAD1] font-halvetica-neue grid gap-[18px]">
-              <li><a href="">Company Overview</a></li>
-              <li><a href="">Our Mission</a></li>
-            </ul>
-          </div>
+
+      <div
+        class="grid grid-rows-3 grid-cols-2 md:grid-cols-3 md:grid-rows-2 content-between"
+      >
+        <div class="grid gap-6">
+          <a href="#" class="text-white font-halvetica-neue">Features</a>
+          <ul class="text-[#C7CAD1] font-halvetica-neue grid gap-[18px]">
+            <li><a href="">Explore Features</a></li>
+            <li><a href="">Key Benefits</a></li>
+          </ul>
         </div>
-        <div class="grid grid-cols-3">
-          <!--  -->
-          <div class="grid gap-6">
-            <a href="#" class="text-white font-halvetica-neue">Extention</a>
-            <ul class="text-[#C7CAD1] font-halvetica-neue grid gap-[18px]">
-              <li><a href="">API Support</a></li>
-              <li><a href="">Additional Modules</a></li>
-            </ul>
-          </div>
-          <!--  -->
-          <div class="grid gap-6">
-            <a href="#" class="text-white font-halvetica-neue">Resource</a>
-            <ul class="text-[#C7CAD1] font-halvetica-neue grid gap-[18px]">
-              <li><a href="">Documentation</a></li>
-              <li><a href="">Tutorials</a></li>
-            </ul>
-          </div>
-          <!--  -->
-          <div class="grid gap-6">
-            <a href="#" class="text-white font-halvetica-neue">Community</a>
-            <ul class="text-[#C7CAD1] font-halvetica-neue grid gap-[18px]">
-              <li><a href="">Forum</a></li>
-              <li><a href="">Blog</a></li>
-            </ul>
-          </div>
+        <!--  -->
+        <div class="grid gap-6">
+          <a href="#" class="text-white font-halvetica-neue">Pricing</a>
+          <ul class="text-[#C7CAD1] font-halvetica-neue grid gap-[18px]">
+            <li><a href="">Pricing Plans</a></li>
+            <li><a href="">Discounts & Offers</a></li>
+          </ul>
+        </div>
+        <!--  -->
+        <div class="grid gap-6">
+          <a href="#" class="text-white font-halvetica-neue">About Us</a>
+          <ul class="text-[#C7CAD1] font-halvetica-neue grid gap-[18px]">
+            <li><a href="">Company Overview</a></li>
+            <li><a href="">Our Mission</a></li>
+          </ul>
+        </div>
+        <!--  -->
+        <div class="grid gap-6">
+          <a href="#" class="text-white font-halvetica-neue">Extention</a>
+          <ul class="text-[#C7CAD1] font-halvetica-neue grid gap-[18px]">
+            <li><a href="">API Support</a></li>
+            <li><a href="">Additional Modules</a></li>
+          </ul>
+        </div>
+        <!--  -->
+        <div class="grid gap-6">
+          <a href="#" class="text-white font-halvetica-neue">Resource</a>
+          <ul class="text-[#C7CAD1] font-halvetica-neue grid gap-[18px]">
+            <li><a href="">Documentation</a></li>
+            <li><a href="">Tutorials</a></li>
+          </ul>
+        </div>
+        <!--  -->
+        <div class="grid gap-6">
+          <a href="#" class="text-white font-halvetica-neue">Community</a>
+          <ul class="text-[#C7CAD1] font-halvetica-neue grid gap-[18px]">
+            <li><a href="">Forum</a></li>
+            <li><a href="">Blog</a></li>
+          </ul>
           <!--  -->
         </div>
       </div>
