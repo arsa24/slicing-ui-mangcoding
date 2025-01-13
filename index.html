@@ -441,13 +441,14 @@
           <div class="grid md:grid-cols-3 gap-6 mt-10">
             <!-- basic plan -->
             <div
-              class="bg-[#e7e7e7] overflow-hidden pb-2 rounded-[14px] relative basic"
+              class="bg-[#e7e7e7] overflow-hidden pb-2 rounded-[14px] relative card-price"
+              id="basic"
             >
               <div class="absolute w-full">
                 <img src="./src/assets/ellipse.png" alt="" class="w-full" />
               </div>
               <div
-                class="p-4 grid gap-4 z-50 plan-card"
+                class="p-4 grid gap-4 z-50 plan-card font-halvetica-neue"
                 data-month="10"
                 data-year="120"
               >
@@ -495,13 +496,14 @@
 
             <!-- preffesional -->
             <div
-              class="bg-[#e7e7e7] overflow-hidden pb-2 rounded-[14px] relative proffesional"
+              class="bg-[#e7e7e7] overflow-hidden pb-2 rounded-[14px] relative card-price"
+              id="proffesional"
             >
               <div class="absolute w-full">
                 <img src="./src/assets/ellipse.png" alt="" class="w-full" />
               </div>
               <div
-                class="p-4 grid gap-4 z-50 plan-card"
+                class="p-4 grid gap-4 z-50 plan-card font-halvetica-neue"
                 data-month="25"
                 data-year="300"
               >
@@ -553,10 +555,13 @@
 
             <!-- bussiness -->
 
-            <div class="bg-[#050810] pb-2 rounded-[14px] bussiness">
+            <div
+              class="bg-[#050810] pb-2 rounded-[14px] card-price"
+              id="bussiness"
+            >
               <div class="p-4 grid gap-4">
                 <div
-                  class="flex justify-between plan-card"
+                  class="flex justify-between plan-card font-halvetica-neue text-white"
                   data-year="600"
                   data-month="50"
                 >
@@ -571,6 +576,7 @@
                     Recomendation
                   </p>
                 </div>
+
                 <div class="flex font-halvetica-neue items-end text-white">
                   <p
                     class="font-medium text-[40px] self-end leading-[34px] price"

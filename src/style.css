@@ -100,3 +100,7 @@ html.lenis {
 .active-acordion button svg {
   transform: rotate(180deg);
 }
+
+.disc {
+  @apply line-through;
+}

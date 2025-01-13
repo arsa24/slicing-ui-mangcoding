@@ -37,23 +37,40 @@ acordions.forEach((item, i) => {
 });
 
 // plan
-
+const cards = document.querySelectorAll(".card-price");
 const month = document.querySelector("#monthly");
 const year = document.querySelector("#yearly");
+const timeSubs = document.querySelectorAll(".time");
+const dataPlan = document.querySelectorAll(".plan-card");
+const price = document.querySelectorAll(".price");
+
+const discPlan = document.querySelectorAll(".plan-card h3");
 
 function updatePricing(plan) {
-  const discount = 15;
+  cards.forEach((e, i) => {
+    const p = dataPlan[i].getAttribute("data-year");
+    const discount = 15;
+    const calcDisc = p - (discount * p) / 100;
+    const discPrice = document.createElement("p");
+    const existingDisc = discPlan[i].parentElement.querySelector(".disc");
 
-  const planCards = document.querySelectorAll(".plan-card");
+    if (plan == "Month") {
+      if (existingDisc) {
+        existingDisc.remove();
+      }
+      price[i].innerHTML = `$${dataPlan[i].getAttribute("data-month")}/`;
+      timeSubs[i].innerHTML = "Month";
+      discPrice.remove();
+    } else {
+      if (!existingDisc) {
+        const discPrice = document.createElement("p");
+        discPrice.textContent = `$${p}/Year`;
+        discPrice.className = "disc";
+        discPlan[i].insertAdjacentElement("afterend", discPrice);
+      }
 
-  planCards.forEach((card) => {
-    const dataMonth = parseFloat(card.getAttribute("data-month"));
-    const dataYear = parseFloat(card.getAttribute("data-year"));
-    const priceElement = card.querySelector(".price");
-    const timeElement = card.querySelector(".time");
-
-    if (plan === "Month") {
-    } else if (plan === "Year") {
+      price[i].innerHTML = `$${calcDisc}/`;
+      timeSubs[i].innerHTML = "Year";
     }
   });
 }
