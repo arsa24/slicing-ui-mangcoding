@@ -74,3 +74,21 @@
 .discount {
   font-size: 10px;
 }
+
+.acordion span {
+  transition: all 0.3s ease;
+}
+
+.acordion-item {
+  height: 0px;
+  overflow: hidden;
+  display: none;
+}
+
+.active-acordion span {
+  @apply !block h-auto;
+}
+
+.active-acordion button svg {
+  transform: rotate(180deg);
+}

@@ -9,20 +9,17 @@ const swiper = new Swiper(".swiper", {
   centeredSlides: true,
   loop: true,
   slideActiveClass: "active-slide",
-  centeredSlidesBounds: true
+  centeredSlidesBounds: true,
 });
 
 // acordion
 let acordions = document.querySelectorAll(".acordion");
-acordions.forEach((item) => {
+let acordionItem = document.querySelectorAll(".acordion-item");
+let dropIcons = document.querySelectorAll(".acordion button svg")
+acordions.forEach((item, i) => {
   item.addEventListener("click", () => {
-    acordions.forEach((element) => {
-      element.addEventListener("click", () => {
-        element.classList.remove("active-acordion");
-        console.log("click");
-      });
-    });
-    item.classList.add("active-acordion");
+    item.classList.toggle("active-acordion");
+    dropIcons[i]
   });
 });
 
