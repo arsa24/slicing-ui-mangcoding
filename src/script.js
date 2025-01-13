@@ -1,9 +1,22 @@
+import Lenis from "lenis";
 import Swiper from "swiper";
 import "swiper/css";
 
-const w = window.innerWidth;
+// lenis
+const lenis = new Lenis({
+  smoothWheel: true,
+  duration: 1.2,
+  easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+});
+
+function raf(time) {
+  lenis.raf(time);
+  requestAnimationFrame(raf);
+}
+requestAnimationFrame(raf);
 
 // swiper
+const w = window.innerWidth;
 const swiper = new Swiper(".swiper", {
   slidesPerView: w >= 768 ? 3 : 1,
   centeredSlides: true,
@@ -15,11 +28,11 @@ const swiper = new Swiper(".swiper", {
 // acordion
 let acordions = document.querySelectorAll(".acordion");
 let acordionItem = document.querySelectorAll(".acordion-item");
-let dropIcons = document.querySelectorAll(".acordion button svg")
+let dropIcons = document.querySelectorAll(".acordion button svg");
 acordions.forEach((item, i) => {
   item.addEventListener("click", () => {
     item.classList.toggle("active-acordion");
-    dropIcons[i]
+    dropIcons[i];
   });
 });
 
