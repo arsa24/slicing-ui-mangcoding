@@ -9,6 +9,7 @@ const swiper = new Swiper(".swiper", {
   centeredSlides: true,
   loop: true,
   slideActiveClass: "active-slide",
+  centeredSlidesBounds: true
 });
 
 // acordion
@@ -24,6 +25,8 @@ acordions.forEach((item) => {
     item.classList.add("active-acordion");
   });
 });
+
+// plan
 
 const month = document.querySelector("#monthly");
 const year = document.querySelector("#yearly");
