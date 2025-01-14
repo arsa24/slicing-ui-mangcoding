@@ -43,8 +43,6 @@ const year = document.querySelector("#yearly");
 const timeSubs = document.querySelectorAll(".time");
 const dataPlan = document.querySelectorAll(".plan-card");
 const price = document.querySelectorAll(".price");
-
-const discPlan = document.querySelectorAll(".plan-card h3");
 const discInfo = document.querySelectorAll(".disc-info");
 const dsc = document.querySelectorAll(".discount");
 const pricBeforeDisc = document.querySelectorAll(".pric-before-disc");
@@ -52,7 +50,8 @@ const pricBeforeDisc = document.querySelectorAll(".pric-before-disc");
 function updatePricing(plan) {
   cards.forEach((e, i) => {
     const p = dataPlan[i].getAttribute("data-year");
-    const discount = 15;
+    const x = dataPlan[i].getAttribute("data-month");
+    const discount = 35;
     const calcDisc = p - (discount * p) / 100;
     dsc[i].innerHTML = `${discount}% Discount`;
 
@@ -60,10 +59,11 @@ function updatePricing(plan) {
       discInfo[i].classList.remove("disc-info-active");
       discInfo[i].classList.add("hidden");
       timeSubs[i].innerHTML = "Month";
+      price[i].innerHTML = `$${x}/`
     } else {
       discInfo[i].classList.add("disc-info-active");
       discInfo[i].classList.remove("hidden");
-      price[i].innerHTML = `$${calcDisc}/`;
+      price[i].innerHTML = `$${calcDisc % 1 !== 0 ? calcDisc.toFixed(2) : calcDisc}/`;
       timeSubs[i].innerHTML = "Year";
       pricBeforeDisc[i].innerHTML = `$${p}`;
     }
