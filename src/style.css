@@ -80,7 +80,7 @@ html.lenis {
 }
 
 .discount {
-  font-size: 10px;
+  font-size: 14px;
 }
 
 .acordion span {
@@ -103,4 +103,8 @@ html.lenis {
 
 .disc {
   @apply line-through;
+}
+
+.disc-info-active {
+  @apply flex gap-2 items-center;
 }

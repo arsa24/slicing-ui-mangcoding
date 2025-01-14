@@ -45,32 +45,27 @@ const dataPlan = document.querySelectorAll(".plan-card");
 const price = document.querySelectorAll(".price");
 
 const discPlan = document.querySelectorAll(".plan-card h3");
+const discInfo = document.querySelectorAll(".disc-info");
+const dsc = document.querySelectorAll(".discount");
+const pricBeforeDisc = document.querySelectorAll(".pric-before-disc");
 
 function updatePricing(plan) {
   cards.forEach((e, i) => {
     const p = dataPlan[i].getAttribute("data-year");
     const discount = 15;
     const calcDisc = p - (discount * p) / 100;
-    const discPrice = document.createElement("p");
-    const existingDisc = discPlan[i].parentElement.querySelector(".disc");
+    dsc[i].innerHTML = `${discount}% Discount`;
 
     if (plan == "Month") {
-      if (existingDisc) {
-        existingDisc.remove();
-      }
-      price[i].innerHTML = `$${dataPlan[i].getAttribute("data-month")}/`;
+      discInfo[i].classList.remove("disc-info-active");
+      discInfo[i].classList.add("hidden");
       timeSubs[i].innerHTML = "Month";
-      discPrice.remove();
     } else {
-      if (!existingDisc) {
-        const discPrice = document.createElement("p");
-        discPrice.textContent = `$${p}/Year`;
-        discPrice.className = "disc";
-        discPlan[i].insertAdjacentElement("afterend", discPrice);
-      }
-
+      discInfo[i].classList.add("disc-info-active");
+      discInfo[i].classList.remove("hidden");
       price[i].innerHTML = `$${calcDisc}/`;
       timeSubs[i].innerHTML = "Year";
+      pricBeforeDisc[i].innerHTML = `$${p}`;
     }
   });
 }
