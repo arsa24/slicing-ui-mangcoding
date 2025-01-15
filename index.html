@@ -118,7 +118,7 @@
         </nav>
       </header>
       <!-- hero section -->
-      <section class="hero container py-8 lg:py-[60px] px-6 lg:px-10">
+      <section class="hero container mx-auto py-8 lg:py-[60px] px-6 lg:px-10">
         <div class="gap-6 grid">
           <div class="flex flex-col justify-center items-center gap-4">
             <div class="flex">
@@ -443,6 +443,13 @@
               class="md:self-end md:justify-self-end gap-8 flex font-inter font-normal leading-5 text-[#8D8F9B]"
             >
               <button id="monthly" class="pricing-active">Monthly</button>
+
+              <label class="inline-flex items-center cursor-pointer">
+                <input type="checkbox" value="" class="sr-only peer" />
+                <div
+                  class="relative w-[46px] h-[25px] peer-focus:outline-none rounded-full peer dark:bg-[#F1F2F3] peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:shadow-2xl after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-[#050810]"
+                ></div>
+              </label>
               <button id="yearly">Yearly</button>
             </div>
           </div>
