@@ -1,6 +1,7 @@
 import Lenis from "lenis";
 import Swiper from "swiper";
 import "swiper/css";
+import { Mousewheel } from "swiper/modules";
 
 // lenis
 const lenis = new Lenis({
@@ -23,6 +24,11 @@ const swiper = new Swiper(".swiper", {
   loop: true,
   slideActiveClass: "active-slide",
   centeredSlidesBounds: true,
+  autoplay: {
+    delay: 300,
+  },
+  mousewheel: true,
+  modules: [Mousewheel],
 });
 
 // acordion
@@ -59,11 +65,13 @@ function updatePricing(plan) {
       discInfo[i].classList.remove("disc-info-active");
       discInfo[i].classList.add("hidden");
       timeSubs[i].innerHTML = "Month";
-      price[i].innerHTML = `$${x}/`
+      price[i].innerHTML = `$${x}/`;
     } else {
       discInfo[i].classList.add("disc-info-active");
       discInfo[i].classList.remove("hidden");
-      price[i].innerHTML = `$${calcDisc % 1 !== 0 ? calcDisc.toFixed(2) : calcDisc}/`;
+      price[i].innerHTML = `$${
+        calcDisc % 1 !== 0 ? calcDisc.toFixed(2) : calcDisc
+      }/`;
       timeSubs[i].innerHTML = "Year";
       pricBeforeDisc[i].innerHTML = `$${p}`;
     }
