@@ -42,7 +42,7 @@ acordions.forEach((item, i) => {
   });
 });
 
-// plan
+// pricing
 const cards = document.querySelectorAll(".card-price");
 const month = document.querySelector("#monthly");
 const year = document.querySelector("#yearly");
@@ -78,14 +78,19 @@ function updatePricing(plan) {
   });
 }
 
-month.addEventListener("click", () => {
-  updatePricing("Month");
-  month.classList.add("pricing-active");
-  year.classList.remove("pricing-active");
-});
-
-year.addEventListener("click", () => {
-  updatePricing("Year");
-  year.classList.add("pricing-active");
-  month.classList.remove("pricing-active");
+document.addEventListener("DOMContentLoaded", () => {
+  const checkbox = document.querySelector("#togglePrice");
+  checkbox.addEventListener("change", () => {
+    if (checkbox.checked == true) {
+      console.log(true);
+      year.classList.add("pricing-active");
+      month.classList.remove("pricing-active");
+      updatePricing("Year");
+    } else {
+      console.log(false);
+      updatePricing("Month");
+      month.classList.add("pricing-active");
+      year.classList.remove("pricing-active");
+    }
+  });
 });

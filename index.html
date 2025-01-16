@@ -19,9 +19,14 @@
       <header class="sticky top-0 z-[999] w-full bg-white">
         <nav class="container mx-auto py-3 px-6 lg:py-3 lg:px-10">
           <div class="flex justify-between items-center">
-            <div class="flex items-center gap-1">
-              <img src="./src/assets/logo.svg" alt="" />
-              <a class="text-[16px] font-inter font-bold"> Flantter </a>
+            <div>
+              <a
+                class="text-[16px] font-inter font-bold flex items-center gap-1"
+                href="#"
+              >
+                <img src="./src/assets/logo.svg" alt="" />
+                Flantter
+              </a>
             </div>
             <div class="">
               <ul class="md:flex gap-[26px] hidden">
@@ -445,7 +450,7 @@
               <button id="monthly" class="pricing-active">Monthly</button>
 
               <label class="inline-flex items-center cursor-pointer">
-                <input type="checkbox" value="" class="sr-only peer" />
+                <input type="checkbox" value="" class="sr-only peer" id="togglePrice"/>
                 <div
                   class="relative w-[46px] h-[25px] peer-focus:outline-none rounded-full peer dark:bg-[#F1F2F3] peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:shadow-2xl after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-[#050810]"
                 ></div>
@@ -656,7 +661,7 @@
       <section class="faq container mx-auto py-8 px-6 lg:py-[60px] lg:px-10">
         <div class="grid md:grid-cols-2 gap-[60px] items-start">
           <div class="flex flex-col gap-[14px] justify-center">
-            <div class="flex items-center justify-center">
+            <div class="flex items-center justify-center md:justify-normal">
               <div class="w-5 h-5 flex items-center p-1">
                 <span
                   class="h-full w-full block rounded-full bg-[#2E66EF]"
