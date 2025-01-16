@@ -94,3 +94,14 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+
+// navbar
+const nvbars = document.querySelectorAll(".nvbar");
+const nvbtn = document.querySelector("#nvbtn");
+
+nvbtn.addEventListener("click", () => {
+  console.log("click")
+  nvbars.forEach((nvbar) => {
+    nvbar.classList.add("navbar-active")
+  });
+});

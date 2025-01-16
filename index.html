@@ -28,8 +28,23 @@
                 Flantter
               </a>
             </div>
-            <div class="">
-              <ul class="md:flex gap-[26px] hidden">
+            <div id="nvbtn" class="md:hidden block">
+              <button>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="24px"
+                  viewBox="0 -960 960 960"
+                  width="24px"
+                  fill="#000"
+                >
+                  <path
+                    d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div class="hidden md:block">
+              <ul class="md:flex hidden gap-[26px] nvbar">
                 <li class="dropdown relative">
                   <a
                     class="font-normal text-[14px] flex items-center gap-[4px]"
@@ -105,7 +120,7 @@
                 </li>
               </ul>
             </div>
-            <div class="flex gap-3 items-center">
+            <div class="md:flex gap-3 items-center hidden nvbar">
               <a
                 href="#"
                 class="text-[12px] lg:text-[14px] font-medium hover:opacity-80"
@@ -118,6 +133,99 @@
               >
                 <button>Get Started</button>
               </a>
+            </div>
+            <div class="navbar-mobile hidden flex-col absolute w-3/4 h-screen bg-white top-0 bottom-0 right-0 p-2 gap-4">
+              <div class="">
+                <ul class="flex gap-[26px] nvbar flex-col">
+                  <li class="dropdown relative">
+                    <a
+                      class="font-normal text-[14px] flex items-center gap-[4px]"
+                      href="#"
+                    >
+                      Resource
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="24px"
+                        viewBox="0 -960 960 960"
+                        width="24px"
+                        fill="#000"
+                      >
+                        <path
+                          d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"
+                        />
+                      </svg>
+                    </a>
+                    <ul class="absolute">
+                      <li><a href="">resource-1</a></li>
+                      <li><a href="">resource-2</a></li>
+                      <li><a href="">resource-3</a></li>
+                      <li><a href="">resource-4</a></li>
+                      <li><a href="">resource-5</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown relative">
+                    <a
+                      href="#"
+                      class="font-normal text-[14px] flex items-center gap-[4px]"
+                    >
+                      Features
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="24px"
+                        viewBox="0 -960 960 960"
+                        width="24px"
+                        fill="#000"
+                      >
+                        <path
+                          d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"
+                        />
+                      </svg>
+                    </a>
+                    <ul class="absolute">
+                      <li><a href="">features-1</a></li>
+                      <li><a href="">features-2</a></li>
+                      <li><a href="">features-3</a></li>
+                      <li><a href="">features-4</a></li>
+                      <li><a href="">features-5</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a
+                      class="font-normal text-[14px] flex items-center gap-[4px]"
+                      href="#"
+                      >Blog</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="font-normal text-[14px] flex items-center gap-[4px]"
+                      href="#"
+                      >Pricing</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="font-normal text-[14px] flex items-center gap-[4px]"
+                      href="#"
+                      >Contact</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="flex gap-3 items-center nvbar">
+                <a
+                  href="#"
+                  class="text-[12px] lg:text-[14px] font-medium hover:opacity-80"
+                >
+                  <button>Login</button>
+                </a>
+                <a
+                  href="#"
+                  class="text-[12px] lg:text-[14px] font-medium px-[18px] py-[10px] lg:px-[20px] lg:py-[12px] text-white bg-[#050810] rounded-[12px] hover:opacity-80"
+                >
+                  <button>Get Started</button>
+                </a>
+              </div>
             </div>
           </div>
         </nav>
@@ -450,7 +558,12 @@
               <button id="monthly" class="pricing-active">Monthly</button>
 
               <label class="inline-flex items-center cursor-pointer">
-                <input type="checkbox" value="" class="sr-only peer" id="togglePrice"/>
+                <input
+                  type="checkbox"
+                  value=""
+                  class="sr-only peer"
+                  id="togglePrice"
+                />
                 <div
                   class="relative w-[46px] h-[25px] peer-focus:outline-none rounded-full peer dark:bg-[#F1F2F3] peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:shadow-2xl after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-[#050810]"
                 ></div>
