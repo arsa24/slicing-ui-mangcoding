@@ -246,8 +246,10 @@
         </nav>
       </header>
       <!-- hero section -->
-      <section class="hero container mx-auto py-8 lg:py-[60px] px-6 lg:px-10">
-        <div class="gap-6 grid">
+      <section class="hero relative mx-5">
+        <div
+          class="gap-6 grid container mx-auto py-8 lg:py-[60px] px-6 lg:px-10 z-10"
+        >
           <div class="flex flex-col justify-center items-center gap-4">
             <div class="flex gap-5">
               <img src="./src/assets/figma.svg" alt="" />
@@ -277,10 +279,14 @@
               </button>
             </a>
           </div>
-          <div class="flex justify-center">
+          <div class="flex justify-center z-20">
             <img src="./src/assets/preview.svg" alt="" class="w-full" />
           </div>
         </div>
+        <span
+          class="bg-[#F1F2F3] h-1/5 md:h-2/5 w-full left-0 right-0 bottom-0 z-0 absolute rounded-3xl"
+        >
+        </span>
       </section>
 
       <!-- company -->
@@ -1215,7 +1221,6 @@
         </div>
       </div>
     </footer>
-
     <script type="module" src="/src/script.js"></script>
   </body>
 </html>
