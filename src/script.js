@@ -114,5 +114,5 @@ closeBtn.addEventListener("click", () => {
 init({
   duration: 1000,
   offset: 200,
-  // once: true,
+  once: true,
 });
