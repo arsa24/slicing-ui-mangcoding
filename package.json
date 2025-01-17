@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "devDependencies": {
+    "aos": "^2.3.4",
     "vite": "^6.0.5"
   },
   "dependencies": {

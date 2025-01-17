@@ -16,7 +16,7 @@ html.lenis {
 }
 
 .title-header {
-  @apply font-medium text-2xl leading-7 text-center md:text-left md:text-[60px] md:leading-[64px] font-plus-jakarta-sans;
+  @apply font-medium text-2xl leading-7 md:text-[32px] lg:text-[60px] md:leading-[54px] lg:leading-[64px] font-plus-jakarta-sans;
 }
 
 .swiper-wrapper {

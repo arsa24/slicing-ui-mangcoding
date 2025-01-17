@@ -1,7 +1,9 @@
+import {init} from "aos";
 import Lenis from "lenis";
 import Swiper from "swiper";
 import "swiper/css";
 import { Mousewheel } from "swiper/modules";
+import 'aos/dist/aos.css'
 
 // lenis
 const lenis = new Lenis({
@@ -19,7 +21,7 @@ requestAnimationFrame(raf);
 // swiper
 const w = window.innerWidth;
 const swiper = new Swiper(".swiper", {
-  slidesPerView: w >= 768 ? 2 : w >= 1024 ? 3 : 1,
+  slidesPerView: w > 768 ? 3 : 1,
   centeredSlides: true,
   loop: true,
   slideActiveClass: "active-slide",
@@ -106,4 +108,11 @@ nvbtn.addEventListener("click", () => {
 
 closeBtn.addEventListener("click", () => {
   nvbar.classList.remove("navbar-active");
+});
+
+// aos
+init({
+  duration: 1000,
+  offset: 200,
+  // once: true,
 });
