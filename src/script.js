@@ -19,7 +19,7 @@ requestAnimationFrame(raf);
 // swiper
 const w = window.innerWidth;
 const swiper = new Swiper(".swiper", {
-  slidesPerView: w >= 768 ? 3 : 1,
+  slidesPerView: w >= 768 ? 2 : w >= 1024 ? 3 : 1,
   centeredSlides: true,
   loop: true,
   slideActiveClass: "active-slide",
@@ -98,7 +98,7 @@ document.addEventListener("DOMContentLoaded", () => {
 // navbar
 const nvbar = document.querySelector(".navbar-mobile");
 const nvbtn = document.querySelector("#nvbtn");
-const closeBtn = document.querySelector(".close-btn")
+const closeBtn = document.querySelector(".close-btn");
 
 nvbtn.addEventListener("click", () => {
   nvbar.classList.add("navbar-active");
@@ -106,4 +106,4 @@ nvbtn.addEventListener("click", () => {
 
 closeBtn.addEventListener("click", () => {
   nvbar.classList.remove("navbar-active");
-})
+});
