@@ -1,9 +1,9 @@
-import {init} from "aos";
+import { init } from "aos";
 import Lenis from "lenis";
 import Swiper from "swiper";
 import "swiper/css";
 import { Mousewheel } from "swiper/modules";
-import 'aos/dist/aos.css'
+import "aos/dist/aos.css";
 
 // lenis
 const lenis = new Lenis({
@@ -115,4 +115,21 @@ init({
   duration: 1000,
   offset: 200,
   once: true,
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const carousels = document.querySelectorAll(".docs-carousel");
+  let activeIndex = 0;
+
+  function updateCarousel() {
+    carousels.forEach((carousel) =>
+      carousel.classList.remove("docs-carousel-active")
+    );
+
+    carousels[activeIndex].classList.add("docs-carousel-active");
+    activeIndex = (activeIndex + 1) % carousels.length;
+  }
+
+  updateCarousel();
+  setInterval(updateCarousel, 3000);
 });

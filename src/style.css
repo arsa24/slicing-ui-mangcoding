@@ -116,3 +116,25 @@ html.lenis {
 .navbar-active {
   @apply !flex;
 }
+
+.docs-carousel {
+  @apply relative;
+}
+
+.docs-carousel h3 {
+  @apply border-l-2 border-white/20 px-3 font-medium text-xl leading-6;
+}
+
+.docs-carousel-active h3 {
+  @apply !border-white;
+}
+
+.docs-carousel p {
+  @apply absolute opacity-0 transition-all duration-300 ease-linear;
+  transform: translateY(-10px);
+}
+
+.docs-carousel.docs-carousel-active p {
+  @apply relative opacity-100 transition-all duration-300 ease-linear;
+  transform: translateY(0px);
+}
